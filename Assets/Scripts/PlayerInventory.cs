@@ -33,11 +33,19 @@ public class PlayerInventory : MonoBehaviour
         }
     }
 
-    public void Ganaste()
+    public void Level2()
     {
         if (tieneCigarrillo && tieneEncendedor)
         {
             SceneManager.LoadScene("Nivel2");
+        }
+    }
+
+    public void Level3()
+    {
+        if (tieneCigarrillo && tieneEncendedor)
+        {
+            SceneManager.LoadScene("Nivel3");
         }
     }
 
@@ -55,9 +63,13 @@ public class PlayerInventory : MonoBehaviour
         {
             if (SceneManager.GetActiveScene().name == "Nivel1")
             {
-                Ganaste();
+                Level2();
             }
             if (SceneManager.GetActiveScene().name == "Nivel2")
+            {
+                Level3();
+            }
+            if (SceneManager.GetActiveScene().name == "Nivel3")
             {
                 GanasteScene();
             }
