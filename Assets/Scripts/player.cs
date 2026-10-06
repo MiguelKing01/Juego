@@ -102,12 +102,14 @@ public class Player : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
-        if (collision.collider.CompareTag("Player"))
+        if (collision.collider.CompareTag("Impulso"))
         {
-            if (SceneManager.GetActiveScene().name == "Nivel1")
-            {
-                SceneManager.LoadScene("Nivel2");
-            }
+            playerJump = 10;
+        }
+
+        if (collision.collider.CompareTag("ImpulsoDown"))
+        {
+            playerJump = 8;
         }
     }
 

@@ -12,6 +12,9 @@ TagManager:
   - Enemy3
   - TriggerEnemy2
   - TriggerEnemy3
+  - Impulso
+  - ImpulsoDown
+  - Encuentro
   layers:
   - Default
   - TransparentFX
