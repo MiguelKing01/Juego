@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6687541675433849673}
   - component: {fileID: 7629454883234905507}
   - component: {fileID: 2518562919244006923}
+  - component: {fileID: 1579533565515683522}
   m_Layer: 0
   m_Name: Player2
   m_TagString: Player
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 7047431963119051924}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.27, y: 1.8100002, z: 0}
+  m_LocalPosition: {x: -3.02, y: 5.96, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -83,7 +84,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -6188768998144020764, guid: 91ed64ac0f9bae34f86406b910610d9d, type: 3}
+  m_Sprite: {fileID: 4333986110545281385, guid: 46f156075eedcfd46a1b1faf38d629f9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -128,17 +129,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.050777912, y: -0.013848305}
+  m_Offset: {x: 0.05996895, y: 0.020505428}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.3125, y: 2.09375}
+    oldSize: {x: 1.0388889, y: 2.461111}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.1015558, y: 2.0617123}
+  m_Size: {x: 1.1580849, y: 2.47999}
   m_EdgeRadius: 0
 --- !u!50 &6687541675433849673
 Rigidbody2D:
@@ -180,7 +181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
   playerSpeed: 5
-  playerJump: 6
+  playerJump: 7
   esPlayer2: 1
   otroPlayer: {fileID: 0}
   animator: {fileID: 2518562919244006923}
@@ -206,3 +207,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1579533565515683522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7047431963119051924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b055f67ab3e1f154a9309a3449739d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerInventory
+  cigarrilloText: {fileID: 0}
+  encendedorText: {fileID: 0}
+  isPlayer2: 1

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6122826143193138128}
   - component: {fileID: 1553698178628424454}
   - component: {fileID: 7611638804620978717}
+  - component: {fileID: 6043347601060793900}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 2909200314153638372}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -24.4, y: -1.38, z: 0}
+  m_LocalPosition: {x: -18.73, y: 4.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -83,12 +84,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -6188768998144020764, guid: c9c3b5e34beb9244da79c0c4ddbf4982, type: 3}
+  m_Sprite: {fileID: 6672723581918411231, guid: 12555c6e849cd894c8a9cd934cb76009, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.03, y: 2.07}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -110,7 +111,7 @@ Rigidbody2D:
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 10cf5786e498481409aae1347dea7542, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -155,17 +156,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.005660057, y: -0.01698172}
+  m_Offset: {x: -0.005660057, y: 0.004333496}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.3125, y: 2.09375}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 1.2117647, y: 2.4352942}
+    newSize: {x: 1.03, y: 2.07}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.181139, y: 2.0415545}
+  m_Size: {x: 1.181139, y: 2.354683}
   m_EdgeRadius: 0
 --- !u!114 &1553698178628424454
 MonoBehaviour:
@@ -180,7 +181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::player
   playerSpeed: 5
-  playerJump: 6
+  playerJump: 7
   esPlayer2: 0
   otroPlayer: {fileID: 0}
   animator: {fileID: 7611638804620978717}
@@ -206,3 +207,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6043347601060793900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2909200314153638372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b055f67ab3e1f154a9309a3449739d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerInventory
+  cigarrilloText: {fileID: 0}
+  encendedorText: {fileID: 0}
+  isPlayer2: 0
