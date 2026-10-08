@@ -109,6 +109,7 @@ public class Player : MonoBehaviour
 
         if (collision.collider.CompareTag("ImpulsoDown"))
         {
+            puedeSaltar = true;
             playerJump = 8;
         }
     }
